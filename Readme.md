@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Кристина Цвет](https://up.htmlacademy.ru/htmlcss/24/user/902901).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Ясель](https://htmlacademy.ru/profile/yasel).
 
 ---
 

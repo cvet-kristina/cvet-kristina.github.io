@@ -16,6 +16,7 @@
               <label class="visually-hidden" for="search-field">Поиск по сайту</label>
               <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
             </p>
+            <button class="button-search" type="submit">Найти</button>
           </form>
         </div>
         <ul class="user-navigation">
@@ -24,10 +25,18 @@
           <li class="basket"><a href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <div>
-            <li class="site-navigation-current"><a href="catalog.html">Каталог товаров</a></li>
-            <button class="close-open" type="button">Открыть/Закрыть</button>
-          </div>
+          <li class="site-navigation-current">
+            <a href="catalog.html">Каталог товаров</a>
+            <button class="close-open-button" type="button">Открыть/Закрыть</button>
+            <ul class="flow-catalog=menu">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -54,7 +63,6 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <p class="contacts-map-image">
-          <!-- ссылка на большую карту? -->
           <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
         </p>
         <a class="button" href="#">Напишите нам</a>
@@ -109,9 +117,9 @@
           <label for="message-text-field">Текст письма:</label>
           <textarea name="message-text" id="message-text-field" rows="8" placeholder="В свободной форме"></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="button-close" type="button" name="close-the-map">x</button>
+      <button class="button-close" type="button" name="close-the-map">Закрыть</button>
     </section>
 
     <section class="pop-up pop-up-map">

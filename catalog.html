@@ -11,7 +11,12 @@
           <img src="img/logo.svg" width="163" height="35" alt="Логотип «Device»">
         </a>
         <div class="search">
-          <!-- Здесь будет форма поиска -->
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <p>
+              <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+              <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+            </p>
+          </form>
         </div>
         <ul class="user-navigation">
           <li class="user-link"><a href="#">Валентин Петухов</a></li>
@@ -20,7 +25,10 @@
           <li class="basket"><a href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог товаров</a></li>
+          <div>
+            <li class="site-navigation-current"><a href="catalog.html">Каталог товаров</a></li>
+            <button class="close-open" type="button">Открыть/Закрыть</button>
+          </div>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -36,7 +44,47 @@
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр</h2>
-        <!-- Здесь будет форма фильтра -->
+        <form class="filterr-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-check" type="checkbox" name="color-black" id="black-field" checked>
+                <label for="black-field">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-check" type="checkbox" name="color-white" id="white-field">
+                <label for="white-field">Белый</label>
+              </li>
+              <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-check" type="checkbox" name="color-blue" id="blue-field" checked>
+                  <label for="blue-field">Синий</label>
+                </li>
+              <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-check" type="checkbox" name="color-red" id="red-field" checked>
+                  <label for="red-field">Красный</label>
+                </li>
+              <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-check" type="checkbox" name="color-pink" id="pink-field">
+                  <label for="pink-field">Розовый</label>
+                </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes-field">
+                <label for="yes-field">Есть</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="no-field">
+                <label for="no-field">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -53,7 +101,7 @@
               <span>500 руб.</span>
             </p>
             <p class="catalog-item-float-buttons">
-              <a class="button" href="">В корзину</a>
+              <button class="button" type="button">В корзину</button>
               <button  class="compare-button" type="button">Добавить к сравнению</button>
             </p>
           </li>
@@ -68,7 +116,7 @@
               <span>1 500 руб.</span>
             </p>
             <p class="catalog-item-float-buttons">
-              <a class="button" href="">В корзину</a>
+              <button class="button" type="button">В корзину</button>
               <button  class="compare-button" type="button">Добавить к сравнению</button>
             </p>
           </li>
@@ -83,7 +131,7 @@
               <span>2 500 руб.</span>
             </p>
             <p class="catalog-item-float-buttons">
-              <a class="button" href="">В корзину</a>
+              <button class="button" type="button">В корзину</button>
               <button  class="compare-button" type="button">Добавить к сравнению</button>
             </p>
           </li>
@@ -98,7 +146,7 @@
               <span>4 900 руб.</span>
             </p>
             <p class="catalog-item-float-buttons">
-              <a class="button" href="">В корзину</a>
+              <button class="button" type="button">В корзину</button>
               <button  class="compare-button" type="button">Добавить к сравнению</button>
             </p>
           </li>
@@ -137,4 +185,20 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </footer>
+
+    <section class="pop-up pop-up-catalog">
+      <h2 class="visually-hidden">Все категории каталога</h2>
+      <ul class="first-section">
+        <li><a href="#">Виртуальная реальность</a></li>
+        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a href="#">Экшн-камеры</a></li>
+      </ul>
+      <ul class="second-section">
+        <li><a href="#">Фитнес-браслеты</a></li>
+        <li><a href="#">Умные часы</a></li>
+      </ul>
+      <ul class="third-section">
+        <li><a href="#">Квадрокоптеры</a></li>
+      </ul>
+    </section>
   </body>

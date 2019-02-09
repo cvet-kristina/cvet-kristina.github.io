@@ -1,0 +1,277 @@
+@import url("http://fonts.fontstorage.com/import/gilroy.css");
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  color: #000000;
+
+  background-color: #f0c52e;
+}
+
+.button:hover {
+  background-color: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.main-header a svg:hover #logo {
+  opacity: 0.6;
+}
+
+.main-header a svg:active #logo {
+  opacity: 0.3;
+}
+
+.search-form input {
+  background-color: transparent;
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.3);
+
+  border: none;
+}
+
+.search-form input:focus {
+  border-bottom: 2px solid black;
+
+  outline: 0;
+}
+/* изменить цвета наведения на плейсхолдер */
+
+.button-search {
+  font: inherit;
+  letter-spacing: 0.2px;
+}
+
+.button-search:focus {
+  color: #000000;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.button-search:hover {
+  color: #ffffff;
+
+  background-color: #000000;
+  border: 2px solid #000000;
+}
+
+.button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #000000;
+  border: 2px solid #000000;
+}
+
+.user-navigation,
+.site-navigation {
+  list-style: none;
+}
+
+.user-navigation a {
+  color: #000000;
+  letter-spacing: 0.2px;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.user-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.site-navigation-catalog {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+
+  padding: 0;
+}
+
+.site-navigation a:hover,
+.site-navigation-catalog:hover {
+  color: rgba(0, 0, 0, 0.6);
+  outline: 0;
+}
+
+.site-navigation a:active,
+.site-navigation-catalog:active {
+  color: rgba(0, 0, 0, 0.3);
+  outline: 0;
+}
+
+.catalog-list {
+  display: none;
+}
+
+.common-column h2 {
+  font-family: "Gilory", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  color:#000000;
+}
+
+.common-column p {
+  line-height: 40px;
+}
+
+.about-us .companies-list {
+  list-style: none;
+
+  font-family: "Gilory", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.main-footer-left {
+  text-align: left;
+}
+
+.main-footer a svg #logo {
+  fill: #ffc600;
+}
+
+.main-footer a svg:hover #logo {
+  opacity: 0.6;
+}
+
+.main-footer a svg:active #logo {
+  opacity: 0.3;
+}
+
+address {
+  font-style: normal;
+}
+
+.main-footer-middle {
+  text-align: center;
+}
+
+.footer-site-navigation {
+  list-style: none;
+}
+
+.footer-site-navigation a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  color: #ffffff;
+}
+
+.footer-site-navigation a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.main-footer-right {
+  text-align: right;
+}
+
+.footer-user-navigation {
+  list-style: none;
+}
+
+.footer-user-navigation a {
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.2px;
+}
+
+.footer-user-navigation a:hover {
+  color: rgba(255, 255, 255)
+}
+
+.footer-user-navigation a:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.copyright a svg #html-logo {
+  fill: #ffc600;
+}
+
+.copyright a svg:hover #html-logo {
+  opacity: 0.6;
+}
+
+.copyright a svg:active #html-logo {
+  opacity: 0.3;
+}
+
+.pop-up {
+  display: none;
+}
+
+
+
+
+

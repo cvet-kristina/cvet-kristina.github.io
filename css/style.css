@@ -164,12 +164,14 @@ a {
   display: none;
 }
 
-.common-column h2 {
+.main-title {
   font-family: "Gilory", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
-  color:rgb(0, 0, 0);
+  text-align: left;
+  letter-spacing: 0.5;
+  color: rgb(0, 0, 0);
 }
 
 .common-column p {

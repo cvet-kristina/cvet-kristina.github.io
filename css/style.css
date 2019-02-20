@@ -271,6 +271,16 @@ a {
   justify-content: space-between;
 }
 
+.filters::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background-color: rgb(235, 235, 235);
+
+}
+
 .filters {
   width: 270px;
   margin-left: 60px;

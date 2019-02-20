@@ -269,11 +269,12 @@ a {
 .catalog-column {
   display: flex;
   justify-content: space-between;
+
+  position: relative;
+
 }
 
 .filters {
-  position: relative;
-
   width: 270px;
   margin-left: 60px;
 
@@ -283,12 +284,15 @@ a {
 .filters::before {
   content: "";
   position: absolute;
-  left: -270px;
+  left: -1100px;
   top: 0;
   z-index: -1;
-  background-color: rgb(235, 235, 235);
+
   width: 100%;
   height: 100%;
+
+  background-color: rgb(235, 235, 235);
+
 }
 
 .filter fieldset {

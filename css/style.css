@@ -334,6 +334,7 @@ input[type="radio"].visually-hidden {
   align-items: baseline;
 
   width: 1040px;
+  margin-bottom: 45px;
 }
 
 .site-navigation a {
@@ -360,7 +361,6 @@ input[type="radio"].visually-hidden {
 
   width: 220px;
   padding: 0;
-  margin-bottom: 45px;
   border: none;
 
   background-color: transparent;
@@ -407,7 +407,7 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
 
-  background-image: url("../img/background.png");
+  background-image: url("../img/background.jpg");
   background-repeat: repeat;
   background-position: 0 0;
 }

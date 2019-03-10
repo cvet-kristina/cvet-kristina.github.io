@@ -1099,7 +1099,8 @@ address {
 }*/
 
 .pop-up {
-  position: relative;
+  position: fixed;
+  z-index: 10;
 }
 
 .pop-up .button-close {
@@ -1132,13 +1133,19 @@ address {
 }
 
 .pop-up-message {
+  display: none;
+  top: 50%;
+  left: 50%;
+
   width: 760px;
-  margin: auto;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 95px;
   padding-bottom: 78px;
-  margin-top: 50px;
+  margin-left: -480px;
+  margin-top: -276px;
+
+  background-color: rgb(255, 255, 255);
 
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
@@ -1216,12 +1223,23 @@ address {
 }
 
 .pop-up-map {
-  width: 960px;
-  margin: auto;
-  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+
+  width: 994px;
+  margin-top: -296px;
+  margin-left: -497px;
+}
+
+.map-big-image {
+  margin: 0;
+  padding: 0;
+
+  width: 994px;
+  height: 593px;
 }
 
 .pop-up-map img {
-  width: 960px;
-  height: 559px;
+  width: 994px;
+  height: 593px;
 }

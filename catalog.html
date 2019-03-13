@@ -66,9 +66,9 @@
            </li>
             <li>
               <ul class="site-navigation-info">
-                <li class="delivery"><a href="#">Доставка</a></li>
-                <li class="guarantee"><a href="#">Гарантия</a></li>
-                <li class="contacts"><a href="#">Контакты</a></li>
+                <li class="delivery-info"><a href="#">Доставка</a></li>
+                <li class="guarantee-info"><a href="#">Гарантия</a></li>
+                <li class="contacts-info"><a href="#">Контакты</a></li>
               </ul>
             </li>
           </ul>
@@ -86,9 +86,25 @@
 
         <div class="catalog-column">
           <section class="filters">
-            <h2 class="visually-hidden">Фильтр</h2>
+            <h2 class="filter-title">Фильтр:</h2>
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
+              <fieldset class="filter-price">
+                <legend>Стоимость</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <!-- <div class="price-controls">
+                    <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до<input name="max-price" type="text" value="5000"></label>
+                  </div>-->
+                </div>
+              </fieldset>
+              <fieldset class="filter-color">
                 <legend>Цвет</legend>
                 <ul>
                   <li class="filter-option">
@@ -113,7 +129,7 @@
                     </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-bluetooth">
                 <legend>Bluetooth</legend>
                 <ul>
                   <li class="filter-option">
@@ -131,6 +147,18 @@
           </section>
 
           <section class="catalog">
+            <div class="catalog-sorting">
+              <h2 class="catalog-sorting-title">Сортировка:</h2>
+              <ul class="sorting-list">
+                <li class="sorting-item-current"><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По популярности</a></li>
+              </ul>
+              <ul class="sorting-arrows">
+                <li><a href="#"><span class="up-arrow">Вверх</span></a></li>
+                <li class="sotring-arrow-current"><a href="#"><span class="down-arrow">Вниз</span></a></li>
+              </ul>
+            </div>
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
@@ -177,6 +205,17 @@
                   <button  class="compare-button" type="button">Добавить к сравнению</button>
                 </div>
               </li>
+            </ul>
+            <ul class="pagination-block">
+              <li class="pagination-button"><a href="#">Назад</a></li>
+              <li>
+                <ul class="pagination-list">
+                  <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                  <li class="pagination-item"><a href="#">2</a></li>
+                  <li class="pagination-item"><a href="#">3</a></li>
+                </ul>
+              </li>
+              <li class="pagination-button"><a href="#">Вперёд</a></li>
             </ul>
           </section>
         </div>

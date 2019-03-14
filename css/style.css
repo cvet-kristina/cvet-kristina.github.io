@@ -721,6 +721,8 @@ form.filter {
 }
 
 .filter legend {
+  position: relative;
+
   margin-bottom: 35px;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -731,11 +733,7 @@ form.filter {
   color: rgb(0, 0, 0);
 }
 
-.filter-price {
-  position: relative;
-}
-
-.filter-price::before {
+.filter legend::before {
   content: "";
 
   position: absolute;
@@ -784,6 +782,10 @@ form.filter {
   cursor: pointer;
 }
 
+.toggle:hover {
+  transform: scale(1.2);
+}
+
 .range-controls .toggle-min {
   left: 0;
 }
@@ -792,38 +794,22 @@ form.filter {
   left: 110px;
 }
 
-.filter-color {
-  position: relative;
+.price-controls p {
+  display: inline-block;
+
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.filter-color::before {
-  content: "";
-
-  position: absolute;
-  top: -14px;
-  left: 0;
-
-  width: 201px;
-  height: 2px;
-
-  background-color: rgb(0, 0, 0);
-}
-
-.filter-bluetooth{
-  position: relative;
-}
-
-.filter-bluetooth::before {
-  content: "";
-
-  position: absolute;
-  top: -14px;
-  left: 0;
-
-  width: 201px;
-  height: 2px;
-
-  background-color: rgb(0, 0, 0);
+.price-controls p:first-child {
+  margin-right: 63px;
 }
 
 .filter ul {
@@ -1036,20 +1022,32 @@ form.filter {
   height: 10px;
 
   font-size: 0;
+  opacity: 0.2;
 }
 
 .up-arrow {
   background-image: url("../img/up-arrow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 20%;
+
 }
 
 .down-arrow {
   background-image: url("../img/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 20%;
+}
+
+.sorting-arrow-current  span {
+  opacity: 1;
+}
+
+.sorting-arrows span:hover {
+  opacity: 0.4;
+}
+
+.sorting-arrows span:active {
+  opacity: 1;
 }
 
 .catalog-list {

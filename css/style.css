@@ -498,7 +498,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  top: 330px;
+  bottom: 160px;
   right: 80px;
 
   width: 80px;
@@ -547,33 +547,43 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item {
-  display: none;
+  display: flex;
+  justify-content: space-between;
 
-  min-height: 420px;
-  padding-left: 540px;
   padding-top: 85px;
 }
 
-.slider-item:nth-child(3) {
-  display: block;
-}
-
+.slider-item:nth-child(2),
 .slider-item:nth-child(1) {
-  background-image: url(../img/slider-1.png);
-  background-repeat: no-repeat;
-  background-position: 20px 0;
-}
-
-.slider-item:nth-child(2) {
-  background-image: url(../img/slider-2.png);
-  background-repeat: no-repeat;
-  background-position: 55px 0;
+  display: none;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url(../img/slider-3.png);
-  background-repeat: no-repeat;
-  background-position: 0 40px;
+  display: flex;
+}
+
+.slider-image {
+  position: relative;
+
+  margin: 0;
+}
+
+.slider-item .selfie {
+  top: -80px;
+}
+
+.slider-item .bracelet {
+  top: -60px;
+  left: 56px;
+}
+
+.slider-item .watch {
+  top: -20px;
+  left: -30px;
+}
+
+.slider-info {
+  width: 500px;
 }
 
 .slider-item h3 {
@@ -585,7 +595,7 @@ input[type="radio"].visually-hidden {
   line-height: 56px;
 }
 
-.slider-item p {
+.slider-info p {
   max-width: 479px;
   padding: 0;
   margin: 0;
@@ -612,6 +622,138 @@ input[type="radio"].visually-hidden {
 .table-title tr {
   font-size: 13px;
   line-height: 20px;
+}
+
+.popular-items {
+  margin-bottom: 80px;
+}
+
+.popular-items-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 1160px;
+  padding: 0;
+  margin: 0;
+  padding-top: 190px;
+
+  list-style: none;
+}
+
+.popular-items-list li {
+  width: 160px;
+
+  position: relative;
+}
+
+.popular-items-list a {
+  display: block;
+
+  font-family: "Gilory", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+
+  color: rgb(0, 0, 0);
+}
+
+.popular-items-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.popular-items-list a::before {
+  content: "";
+
+  position: absolute;
+  top: -190px;
+  left: 0;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-items-list li:hover a::before {
+  background-color: rgb(240, 197, 46);
+}
+
+.popular-items-list li:active a::before {
+  background-color: rgb(240, 197, 46);
+}
+
+.popular-items-list a::after {
+  content: "";
+
+  position: absolute;
+  top: -190px;
+  left: 0;
+
+  width: 160px;
+  height: 160px;
+
+  background-repeat: no-repeat;
+}
+
+.popular-items-list li:active a::after {
+  opacity: 0.3;
+}
+
+.popular-items-list .virt-reality::after {
+  background-image: url("../img/popular-1.svg");
+  background-position: 50% 50%;
+}
+
+.popular-items-list .monopod::after {
+  background-image: url("../img/popular-2.svg");
+  background-position: 50% 100%;
+}
+
+.popular-items-list .camera::after {
+  background-image: url("../img/popular-3.svg");
+  background-position: 50% 60%;
+}
+
+.popular-items-list .fitness-bracelet::after {
+  background-image: url("../img/popular-4.svg");
+  background-position: 50% 50%;
+}
+
+.popular-items-list .watch::after {
+  background-image: url("../img/popular-5.svg");
+  background-position: 50% 50%;
+}
+
+.popular-items-list .quadcopter::after {
+  background-image: url("../img/popular-6.svg");
+  background-position: 50% 50%;
+}
+
+.brands-items {
+  margin-bottom: 90px;
+}
+
+.brands-items-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 1160px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.brands-items-list img {
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+
+.brands-items-list a:hover img {
+  opacity: 1;
+  filter: none;
 }
 
 .common-column {

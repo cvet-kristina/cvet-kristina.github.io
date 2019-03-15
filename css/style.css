@@ -498,7 +498,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  bottom: 160px;
+  top: 330px;
   right: 80px;
 
   width: 80px;
@@ -587,12 +587,15 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
 
-  font-size: 47px;
-  line-height: 56px;
 }
 
 .slider-info p {

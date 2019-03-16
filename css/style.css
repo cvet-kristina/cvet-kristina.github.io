@@ -840,6 +840,10 @@ input[type="radio"].visually-hidden {
   background-color: rgb(0, 0, 0);
 }
 
+button.button.info-slider-button.info-slider-button:active::before {
+  background-color: transparent;
+}
+
 .info-slider-button-current {
   width: 278px;
 
@@ -847,6 +851,16 @@ input[type="radio"].visually-hidden {
   color: rgb(247,225,132);
 
   background-color: rgb(0, 0, 0);
+}
+
+button.button.info-slider-button.info-slider-button-current::before {
+  width: 278px;
+
+  background-color:  transparent;
+}
+
+.info-slider-button-credit:active{
+  padding-left: 36px;
 }
 
 .information-slider-list {

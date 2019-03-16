@@ -847,7 +847,7 @@ button.button.info-slider-button.info-slider-button-current::before {
   padding-top: 20px;
 }
 
-.information-slider-item:nth-child(3) {
+.information-slider-item:nth-child(1) {
   display: block;
 }
 

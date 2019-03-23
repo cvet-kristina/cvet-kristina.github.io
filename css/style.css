@@ -25,6 +25,8 @@ body {
   background-color: rgb(255, 255, 255);
 
   counter-reset: section;
+
+  overflow-x: hidden;
 }
 
 a {
@@ -72,6 +74,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   letter-spacing: 3.6px;
   color: rgb(0, 0, 0);
+  vertical-align: middle;
 
   background-color: transparent;
 
@@ -157,14 +160,13 @@ input[type="radio"].visually-hidden {
 
   width: 163px;
   height: 35px;
-  margin-bottom: 5px;
 }
 
-.main-header a:hover svg #logo {
+.main-header a:hover svg {
   opacity: 0.6;
 }
 
-.main-header a:active svg #logo {
+.main-header a:active svg {
   opacity: 0.3;
 }
 
@@ -175,9 +177,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
+  /* -webkit-box-align: baseline;
       -ms-flex-align: baseline;
-          align-items: baseline;
+          align-items: baseline;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
@@ -202,7 +204,7 @@ input[type="radio"].visually-hidden {
   display: block;
 
   position: absolute;
-  top: 14px;
+  top: 18px;
 
   font-size: 0;
 
@@ -222,6 +224,7 @@ input[type="radio"].visually-hidden {
   padding-left: 40px;
   border: none;
   border-bottom: 2px solid transparent;
+  /* padding-bottom: 19px; */
 
   background-color: transparent;
 }
@@ -333,6 +336,7 @@ input[type="search"]:focus::placeholder {
       flex-wrap: wrap;
 
   width: 500px;
+  padding-top: 10px;
 }
 
 .user-navigation a {
@@ -660,6 +664,7 @@ input[type="search"]:focus::placeholder {
 
   width: 12px;
   height: 12px;
+  padding: 0;
 
   border: 1px solid rgb(0, 0, 0);
   border-radius: 50%;
@@ -674,10 +679,11 @@ input[type="search"]:focus::placeholder {
 
   position: absolute;
   top: 3px;
-  left: 3px;
+  left: 2px;
 
   width: 3px;
-  height: 2px;
+  height: 3px;
+  padding: 0;
 
   border: 1px solid rgb(0, 0, 0);
   border-radius: 50%;
@@ -780,6 +786,7 @@ input[type="search"]:focus::placeholder {
   letter-spacing: 0.5px;
   color: rgb(0, 0, 0);
 
+  max-width: 502px;
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
@@ -790,7 +797,7 @@ input[type="search"]:focus::placeholder {
   max-width: 489px;
   padding: 0;
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   letter-spacing: 0.1px;
 }
@@ -802,7 +809,9 @@ input[type="search"]:focus::placeholder {
 
 .slider-table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 0px;
+
+ width: 100%;
 }
 
 .slider-table td,
@@ -811,17 +820,14 @@ input[type="search"]:focus::placeholder {
   border: none;
 }
 
-.table-info {
-  margin-bottom: 12px;
-}
-
 .table-info td {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
   color: rgb(0, 0, 0);
+  padding-bottom: 9px;
 
-  padding-right: 74px;
+  padding-right: 76px;
 }
 
 .table-title th {
@@ -847,7 +853,7 @@ input[type="search"]:focus::placeholder {
   width: 1160px;
   padding: 0;
   margin: 0;
-  padding-top: 195px;
+  padding-top: 178px;
   margin-bottom: 165px;
 
   list-style: none;
@@ -1482,6 +1488,8 @@ form.filter {
   line-height: 24px;
   font-weight: 300px;
   color: rgba(0, 0, 0, 0.3);
+
+  vertical-align: middle;
 }
 
 .price-controls p:first-child {
@@ -2278,15 +2286,15 @@ address {
   margin-left: 54px;
 }
 
-.copyright a svg #html-logo {
+.copyright a svg {
   fill: rgb(255, 198, 0);
 }
 
-.copyright a:hover svg #html-logo {
+.copyright a:hover svg {
   opacity: 0.6;
 }
 
-.copyright a:active svg #html-logo {
+.copyright a:active {
   opacity: 0.3;
 }
 
@@ -2395,6 +2403,7 @@ address {
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 17px;
+  padding-right: 15px;
   border: 3px solid transparent;
 
   background-color: #e5e5e5;
@@ -2454,3 +2463,4 @@ address {
   width: 994px;
   height: 593px;
 }
+

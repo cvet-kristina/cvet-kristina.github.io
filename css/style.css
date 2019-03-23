@@ -2057,15 +2057,17 @@ form.filter {
   margin-bottom: 23px;
 }
 
-.main-footer a svg #logo {
-  fill: rgb(255, 198, 0)
+.main-footer a svg  {
+  fill: rgb(255, 198, 0);
+
+  cursor: pointer;
 }
 
-.main-footer a:hover svg #logo {
+.main-footer a:hover svg {
   opacity: 0.6;
 }
 
-.main-footer a:active svg #logo {
+.main-footer a:active svg {
   opacity: 0.3;
 }
 

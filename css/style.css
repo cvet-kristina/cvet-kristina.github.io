@@ -111,11 +111,11 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.index-page .main-navigation {
+.index-page .header-content {
   min-height: 300px;
 }
 
-.main-navigation {
+.header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +139,7 @@ input[type="radio"].visually-hidden {
    background-color: rgba(240, 197, 46, 0.5);
 }
 
-.index-page .main-navigation::before {
+.index-page .header-content::before {
   content: "";
 
   position: absolute;
@@ -156,7 +156,7 @@ input[type="radio"].visually-hidden {
   display: block;
 
   position: relative;
-  top: -15px;
+  top: -18px;
 
   width: 163px;
   height: 35px;
@@ -184,7 +184,7 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
 
   width: 1040px;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 }
 
 .search-form {
@@ -204,7 +204,8 @@ input[type="radio"].visually-hidden {
   display: block;
 
   position: absolute;
-  top: 18px;
+  top: 16px;
+  left: 3px;
 
   font-size: 0;
 
@@ -336,7 +337,7 @@ input[type="search"]:focus::placeholder {
       flex-wrap: wrap;
 
   width: 500px;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .user-navigation a {
@@ -381,7 +382,7 @@ input[type="search"]:focus::placeholder {
   position: relative;
 
   width: 135px;
-  padding-left: 20px;
+  padding-left: 26px;
 }
 
 .login-link a::before {
@@ -449,7 +450,7 @@ input[type="search"]:focus::placeholder {
 
   position: absolute;
   bottom: 9px;
-  left: 15px;
+  left: 16px;
 
   width: 12px;
   height: 12px;
@@ -457,6 +458,10 @@ input[type="search"]:focus::placeholder {
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.main-navigation {
+  margin-bottom: 47px;
 }
 
 .site-navigation {
@@ -473,7 +478,6 @@ input[type="search"]:focus::placeholder {
       flex-wrap: wrap;
 
   width: 1040px;
-  margin-bottom: 45px;
 }
 
 .site-navigation a {
@@ -543,7 +547,7 @@ input[type="search"]:focus::placeholder {
   width: 1100px;
   padding-left: 60px;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 37px;
 
   list-style: none;
 
@@ -647,10 +651,10 @@ input[type="search"]:focus::placeholder {
           justify-content: space-between;
 
   position: absolute;
-  top: 330px;
+  top: 325px;
   right: 80px;
 
-  width: 80px;
+  width: 79px;
   padding: 0;
   margin: 0;
 }
@@ -759,7 +763,7 @@ input[type="search"]:focus::placeholder {
 }
 
 .slider-item .selfie {
-  top: 10px;
+  top: 8px;
   left: 30px;
 }
 
@@ -775,7 +779,7 @@ input[type="search"]:focus::placeholder {
 
 .slider-info {
   width: 500px;
-  padding-top: 90px;
+  padding-top: 88px;
 }
 
 .slider-item h3 {
@@ -804,7 +808,7 @@ input[type="search"]:focus::placeholder {
 
 .slider-button {
   width: 170px;
-  margin-bottom: 44px;
+  margin-bottom: 46px;
 }
 
 .slider-table {
@@ -853,8 +857,8 @@ input[type="search"]:focus::placeholder {
   width: 1160px;
   padding: 0;
   margin: 0;
-  padding-top: 178px;
-  margin-bottom: 165px;
+  padding-top: 176px;
+  margin-bottom: 163px;
 
   list-style: none;
 }
@@ -919,32 +923,32 @@ input[type="search"]:focus::placeholder {
 }
 
 .popular-items-list .virt-reality::after {
-  background-image: url("../img/popular-1.svg");
+  background-image: url("../img/popular-1.png");
   background-position: 50% 50%;
 }
 
 .popular-items-list .monopod::after {
-  background-image: url("../img/popular-2.svg");
+  background-image: url("../img/popular-2.png");
   background-position: 50% 100%;
 }
 
 .popular-items-list .camera::after {
-  background-image: url("../img/popular-3.svg");
+  background-image: url("../img/popular-3.png");
   background-position: 50% 50%;
 }
 
 .popular-items-list .fitness-bracelet::after {
-  background-image: url("../img/popular-4.svg");
+  background-image: url("../img/popular-4.png");
   background-position: 50% 50%;
 }
 
 .popular-items-list .watch::after {
-  background-image: url("../img/popular-5.svg");
+  background-image: url("../img/popular-5.png");
   background-position: 50% 50%;
 }
 
 .popular-items-list .quadcopter::after {
-  background-image: url("../img/popular-6.svg");
+  background-image: url("../img/poppular-6.png");
   background-position: 50% 50%;
 }
 
@@ -960,7 +964,7 @@ input[type="search"]:focus::placeholder {
   z-index: 1;
 
   width: 1160px;
-  margin-bottom: 210px;
+  margin-bottom: 202px;
   margin-top: 20px;
 }
 
@@ -1003,7 +1007,7 @@ input[type="search"]:focus::placeholder {
 
 .info-slider-button {
   width: 160px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .info-slider-button:active {
@@ -1021,6 +1025,9 @@ button.button.info-slider-button.info-slider-button:active::before {
 
 .info-slider-button-current {
   width: 278px;
+  padding-top: 7px;
+  padding-bottom: 9px;
+  padding-left: 19px;
 
   text-align: left;
   color: rgb(247,225,132);
@@ -1043,7 +1050,7 @@ button.button.info-slider-button.info-slider-button-current::before {
 }
 
 .information-slider-list {
-  width: 760px;
+  width: 758px;
   padding: 0;
   margin: 0;
 
@@ -1053,9 +1060,10 @@ button.button.info-slider-button.info-slider-button-current::before {
   display: none;
 
   position: relative;
-  top: -30px;
+  top: -28px;
 
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .information-slider-item:nth-child(1) {
@@ -1086,7 +1094,7 @@ button.button.info-slider-button.info-slider-button-current::before {
 .slider-delivery {
   background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
-  background-position: right 70px top 30px;
+  background-position: right 65px top 33px;
 }
 
 .slider-quarantee {
@@ -1150,7 +1158,7 @@ button.button.info-slider-button.info-slider-button-current::before {
   padding: 0;
   margin: 0;
   padding-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 
 .common-column h2::before {
@@ -1178,8 +1186,8 @@ button.button.info-slider-button.info-slider-button-current::before {
 }
 
 .common-column .button {
-  margin-top: 55px;
-  margin-bottom: 78px;
+  margin-top: 53px;
+  margin-bottom: 80px;
 }
 
 .about-us {
@@ -1191,13 +1199,13 @@ button.button.info-slider-button.info-slider-button-current::before {
 }
 
 .about-us p:last-of-type {
-  margin-bottom: 70px;
+  margin-bottom: 66px;
 }
 
 .about-us .companies-list {
   padding: 0;
   margin: 0;
-  padding-left: 34px;
+  padding-left: 36px;
   list-style: none;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -1215,8 +1223,8 @@ button.button.info-slider-button.info-slider-button-current::before {
   content: "";
 
   position: absolute;
-  left: -30px;
-  top: 15px;
+  left: -34px;
+  top: 17px;
 
   width: 4px;
   height: 4px;
@@ -1237,11 +1245,12 @@ button.button.info-slider-button.info-slider-button-current::before {
 
 .contacts .contacts-map-image {
   display: block;
-  padding-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .contacts .button-to-write {
-  width: 210px;
+  width: 260px;
 }
 
 .catalog-page {
@@ -1252,8 +1261,8 @@ button.button.info-slider-button.info-slider-button-current::before {
 .page-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 23px;
-  padding-top: 38px;
+  margin-bottom: 24px;
+  padding-top: 37px;
 
   letter-spacing: 0.5px;
 }
@@ -1272,7 +1281,7 @@ button.button.info-slider-button.info-slider-button-current::before {
 
   padding: 0;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
 
   list-style: none;
 }
@@ -1369,7 +1378,7 @@ button.button.info-slider-button.info-slider-button-current::before {
 
   padding: 0;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 22px;
   padding-bottom: 24px;
 
   background-color: rgb(217, 217, 217);
@@ -1383,19 +1392,19 @@ button.button.info-slider-button.info-slider-button-current::before {
   left: -1215px;
 
   width: 450%;
-  height: 72px;
+  height: 70px;
 
   background-color: rgb(217, 217, 217);
 }
 
 form.filter {
-  margin-top: 78px;
+  margin-top: 81px;
 }
 
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   border: none;
 }
 
@@ -1447,7 +1456,7 @@ form.filter {
 .range-controls .toggle {
   position: absolute;
   bottom: -9px;
-  left: 0;
+  left: -5px;
 
   width: 4px;
   height: 4px;
@@ -1469,11 +1478,11 @@ form.filter {
 }
 
 .range-controls .toggle-min {
-  left: 0;
+  left: 0px;
 }
 
 .range-controls .toggle-min {
-  left: 110px;
+  left: 108px;
 }
 
 .price-controls p {
@@ -1503,6 +1512,10 @@ form.filter {
 .filter-color legend,
 .filter-bluetooth legend {
   margin-bottom: 20px;
+}
+
+.filter-bluetooth legend {
+  margin-bottom: 23px;
 }
 
 .filter .filter-color {
@@ -1622,7 +1635,7 @@ form.filter {
 
 .catalog {
   width: 760px;
-  margin-bottom: 77px;
+  margin-bottom: 78px;
 }
 
 .catalog-sorting {
@@ -1653,7 +1666,7 @@ form.filter {
   left: -70px;
 
   width: 70px;
-  height: 72px;
+  height: 70px;
 
   background-color:  rgb(235,235,235);
 }
@@ -1666,7 +1679,7 @@ form.filter {
   right: -1000px;
 
   width: 1000px;
-  height: 72px;
+  height: 70px;
 
   background-color:  rgb(235,235,235);
 }
@@ -1684,7 +1697,7 @@ form.filter {
   width: 160px;
   padding: 0;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 22px;
   padding-bottom: 24px;
 }
 
@@ -1698,10 +1711,10 @@ form.filter {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
-  width: 300px;
+  width: 285px;
   padding: 0;
   margin: 0;
-  margin-right: 180px;
+  margin-right: 185px;
 
   list-style: none;
 }
@@ -1788,7 +1801,7 @@ form.filter {
   padding: 0;
   margin: 0;
   margin-top: 69px;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 
   list-style: none;
 }
@@ -1958,14 +1971,19 @@ form.filter {
 
 .pagination-button {
   width: 140px;
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background-color: rgb(235,235,235);
 }
 
-.pagination-button a,
-.pagination-item a {
+.pagination-button,
+.pagination-item {
   display: block;
 
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 24px;
+  padding-bottom: 22px;
 
   font-family:  "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -1983,9 +2001,6 @@ form.filter {
 
 .pagination-button:active {
   background-color: rgb(217, 217, 217);
-}
-
-.pagination-button a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2115,7 +2130,7 @@ form.filter {
   opacity: 0.3;
 }
 
-.footer-user-navigation .user-navigation-index {
+.footer-user-navigation .user-navigation-index{
   width: 85px;
   margin-right: 18px;
 }

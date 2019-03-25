@@ -6,10 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   </head>
   <body class="index-page">
     <header class="main-header">
-      <nav class="main-navigation container">
+      <div class="header-content container">
         <a class="main-header-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
             <defs>
@@ -26,48 +27,50 @@
             <button class="button-search" type="submit">Найти</button>
           </form>
           <ul class="user-navigation">
-            <li class>
+            <li class="user-navigation-item user">
               <ul class="user-navigation-login">
                  <li class="login-link"><a href="#">Войти</a></li>
               </ul>
             </li>
-            <li class="compare"><a href="#">Сравнить</a></li>
-            <li class="basket"><a href="#">Корзина</a></li>
+            <li class="user-navigation-item compare"><a href="#">Сравнить</a></li>
+            <li class="user-navigation-item basket"><a href="#">Корзина</a></li>
           </ul>
         </div>
 
-        <ul class="site-navigation">
-          <li class="site-navigation-catalog"><a href="#">Каталог товаров</a>
-            <ul class="navigation-catalog-list">
-              <li>
-                <ul class="column-1">
-                  <li><a href="catalog.html">Виртуальная реальность</a></li>
-                  <li><a href="catalog.html">Моноподы для селфи</a></li>
-                  <li><a href="catalog.html">Экшн-камеры</a></li>
-                </ul>
-              </li>
-              <li>
-                <ul class="column-2">
-                  <li><a href="catalog.html">Фитнес-браслеты</a></li>
-                  <li><a href="catalog.html">Умные часы</a></li>
-                </ul>
-              </li>
-              <li>
-                <ul class="column-3">
-                  <li><a href="catalog.html">Квадрокоптеры</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul class="site-navigation-info">
-              <li class="delivery-info"><a href="#">Доставка</a></li>
-              <li class="guarantee-info"><a href="#">Гарантия</a></li>
-              <li class="contacts-info"><a href="#">Контакты</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+        <nav class="main-navigation">
+           <ul class="site-navigation">
+             <li class="site-navigation-catalog"><a href="#">Каталог товаров</a>
+               <ul class="navigation-catalog-list">
+                 <li>
+                   <ul class="column-1">
+                     <li><a href="catalog.html">Виртуальная реальность</a></li>
+                     <li><a href="catalog.html">Моноподы для селфи</a></li>
+                     <li><a href="catalog.html">Экшн-камеры</a></li>
+                   </ul>
+                 </li>
+                 <li>
+                   <ul class="column-2">
+                     <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                     <li><a href="catalog.html">Умные часы</a></li>
+                   </ul>
+                 </li>
+                 <li>
+                   <ul class="column-3">
+                     <li><a href="catalog.html">Квадрокоптеры</a></li>
+                   </ul>
+                 </li>
+               </ul>
+             </li>
+             <li class="site-navigation-information">
+               <ul class="site-navigation-info">
+                 <li class="site-navigation-info-item delivery-info"><a href="#">Доставка</a></li>
+                 <li class="site-navigation-info-item guarantee-info"><a href="#">Гарантия</a></li>
+                 <li class="site-navigation-info-item contacts-info"><a href="#">Контакты</a></li>
+               </ul>
+             </li>
+           </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
@@ -110,7 +113,7 @@
           </p>
           <div class="slider-info">
             <h3 class="main-title">Худеем<br> правильно!</h3>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="button slider-button">Подробнее</a>
             <table class="slider-table">
               <tr class="table-info">
@@ -207,7 +210,7 @@
         <p class="contacts-map-image">
           <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
         </p>
-        <a class="button button-to-write" href="#">Напишите нам</a>
+        <button class="button button-to-write" type="button">Напишите нам</button>
       </section>
     </div>
 
@@ -225,13 +228,13 @@
             </svg>
           </a>
           <ul class="footer-user-navigation">
-            <li class="user-navigation-index">
+            <li class="user-navigation-item user user-navigation-index">
               <ul class="user-navigation-login">
                 <li class="login-link"><a href="#">Войти</a></li>
               </ul>
             </li>
-            <li class="compare"><a href="#">Сравнить</a></li>
-            <li class="basket"><a href="#">Корзина</a></li>
+            <li class="user-navigation-item compare"><a href="#">Сравнить</a></li>
+            <li class="user-navigation-item basket"><a href="#">Корзина</a></li>
           </ul>
         </div>
 
